@@ -21,6 +21,7 @@ class Solution
         }
         else{
             minAns = Math.min(minAns, root.data - prev);
+            prev = root.data;
         }
         
         solve(root.right);
